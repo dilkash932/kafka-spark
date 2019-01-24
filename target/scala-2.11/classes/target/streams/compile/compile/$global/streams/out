@@ -1,0 +1,46 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.{DataFrame, SparkSession}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:6:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:7:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.dstream.InputDStream[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:8:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:9:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.kafka010.{CanCommitOffsets, HasOffsetRanges, KafkaUtils, LocationStrategies}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:10:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.kafka.clients.consumer.ConsumerRecord[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:14:24: not found: type SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m  val sparkConf =  new SparkConf().setAppName("StockApp")[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:17:22: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  val sparkSession = SparkSession.builder().config(sparkConf).enableHiveSupport().getOrCreate()[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:18:17: not found: type StreamingContext[0m
+[0m[[0m[31merror[0m] [0m[0m  val ssc = new StreamingContext(sparkSession.sparkContext, Seconds(HIGH_STREAMING_INTERVAL))[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:18:61: not found: value Seconds[0m
+[0m[[0m[31merror[0m] [0m[0m  val ssc = new StreamingContext(sparkSession.sparkContext, Seconds(HIGH_STREAMING_INTERVAL))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:23:18: not found: type InputDStream[0m
+[0m[[0m[31merror[0m] [0m[0m  val messages : InputDStream[ConsumerRecord[String, String]] = KafkaUtils.createDirectStream[String, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:23:65: not found: value KafkaUtils[0m
+[0m[[0m[31merror[0m] [0m[0m  val messages : InputDStream[ConsumerRecord[String, String]] = KafkaUtils.createDirectStream[String, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:25:5: not found: value LocationStrategies[0m
+[0m[[0m[31merror[0m] [0m[0m    LocationStrategies.PreferBrokers,[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/dilkashm/projects/stock_analysis_scala/src/main/scala/firstapp.scala:26:5: not found: value Subscribe[0m
+[0m[[0m[31merror[0m] [0m[0m    Subscribe[String, String](mappingTopicsSet, KafkaParams)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m15 errors found[0m
